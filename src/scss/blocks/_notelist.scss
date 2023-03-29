@@ -1,0 +1,140 @@
+.notelist {
+    display: flex;
+    align-items: flex-start;
+    margin: 0 0 0 260px;
+    box-sizing: border-box;
+    width: 70%;
+
+    @include medium-devices {
+        margin: 0 auto;
+        flex-direction: column;
+        align-items: center
+    }
+}
+
+.notelist__add-note {
+    width: 100%;
+    margin: 0 32px 10px;
+    background-color: #353535;
+    border: none;
+    color: #ffffff;
+    margin: 14px 0 10px;
+    padding: 15px 0;
+    cursor: pointer;
+
+    @include medium-devices {
+        margin: 10px 32px;
+    }
+}
+
+.notelist__add-note:hover {
+    background-color: #ffffff;
+    border: none;
+    color: #353535;
+    padding: 15px 0;
+    outline: 1px solid #353535;
+}
+
+.notelist__tags {
+    margin: 0 0 0 30px;
+
+    @include medium-devices {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+    }
+}
+
+.notelist__tag-button {
+    background-color: #ffffff;
+    border-radius: 10px;
+    border: 1px solid #333333;
+    display: inline-block;
+    cursor: pointer;
+    color: #353535;
+    font-size: 12px;
+    padding: 4px 10px;
+    text-decoration: none;
+    margin: 14px 5px 0 0;
+}
+
+.notelist__tag-button:hover {
+    background-color: #353535;
+    color: #ffffff;
+}
+
+.notelist__tag-button:active {
+    position: relative;
+    top: 1px;
+}
+
+.notelist__add {
+    background-color: transparent;
+    border: 1px solid black;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.notelist__add:hover {
+    background-color: #353535;
+    color: #ffffff;
+}
+
+.notelist__input {
+    padding: 2px;
+    max-width: 30px;
+    border: none;
+}
+
+.notelist__addtag-wrp {
+    margin: 20px 0 0;
+
+    @include medium-devices {
+        width: 70%;
+    }
+}
+
+.notelist__addtag-input {
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border: 1px solid black;
+    padding: 3px 9px;
+    box-sizing: border-box;
+    outline: none;
+
+    @include medium-devices {
+        width: 70%;
+    }
+}
+
+.notelist__addtag-button {
+    background-color: transparent;
+    border: 1px solid black;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    cursor: pointer;
+    padding: 3px 9px;
+    box-sizing: border-box;
+
+    @include medium-devices {
+        width: 30%;
+    }
+}
+
+.notelist__addtag-button:hover {
+    background-color: #353535;
+    color: #ffffff;
+}
+
+.notelist__removetag-button {
+    border-radius: 10px;
+    background-color: transparent;
+    border: 1px solid black;
+    cursor: pointer;
+}
+
+.notelist__removetag-button:hover {
+    background-color: #353535;
+    color: #ffffff;
+}

@@ -1,0 +1,14 @@
+.header {
+    width: 200px;
+    max-width: 360px;
+    background-color: #353535;
+    height: 100vh;
+    position: fixed;
+
+    @include medium-devices {
+        position: relative;
+        height: 50px;
+        width: 100%;
+        max-width: 100%;
+    }
+}
